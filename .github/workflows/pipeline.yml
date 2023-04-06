@@ -5,9 +5,9 @@ env:
   APPLICATION_NAME: app2
 jobs:
   lint:
-    runs-on: [ubuntu-latest]
+    runs-on: ubuntu-18.04
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v3
     - name: Setup Python environment
       uses: actions/setup-python@v1.1.1
     - name: Install requirements
